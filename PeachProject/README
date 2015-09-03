@@ -1,0 +1,38 @@
+---------- INSTALAR PEACHPROJECT -----------
+
+	---------- Requisitos -----------
+	
+1) Ter instalado eclipse ee (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunasr2)
+Unzippar e colocar em alguma pasta conhecida*
+2) Ter baixado apache tomcat (http://ftp.unicamp.br/pub/apache/tomcat/tomcat-7/v7.0.62/bin/apache-tomcat-7.0.62.zip)
+Unzippar e colocar em alguma pasta conhecida***
+3) Ter instalado MYSQL Workbench (http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-5.6.25.0.msi)
+4) Ter instalado o banco de dados MYSQL (link acima pode instalar os dois)
+5) Ter instalado o Driver de conexão Java
+
+	---------- Banco de dados -----------
+
+1) Executar o instalador mysql
+2) Customizar instalacao
+3) Selecionar apenas Mysql Workbench, banco de dados e o "Connector J".
+4) Esperar instalacao acabar e configurar usuario root com senha 1234.
+5) Criar schema chamado mysql também
+6) Abrir BD.mwb
+7) Na aba "Database"
+8) Clicar em "Forward Engineer"
+9) Clicar next até finalizar a operação. 
+Pode ser que seja necessário colocar a senha do root (1234).
+
+		---------- Eclipse EE -----------
+		
+0) Abrir eclipse.exe
+1) Colocar na perspectiva Java EE (canto superior direito)
+2) Clicar em File -> Import (abas no canto superior esquerdo)
+3) Escrever "Existing projects into Workspace"
+4) Em root directory, colocar o caminho da pasta PeachProject
+5) Clicar na aba "Servers"
+6) Clicar em adicionar novo servidor 
+7) Selecionar Apache -> Tomcat v7.0 Server
+8) Escolher a pasta do apache no passo 1 de Requisitos (***)
+9) Clicar em next -> adicionar PeachProject para a direita.
+10) Botao direito no servidor criado e clicar em "Start"

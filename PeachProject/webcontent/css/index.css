@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+.slide {
+	display:table;
+	height: auto;
+	position: relative;
+}
+.slide a img {
+				width: 100%;
+}
+
+.slide:hover a .text-content {
+	opacity: 0.8;
+}
+
+.text-content {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    background-color: #333;
+    transition: all 0.5s ease;
+   	display:table-cell;
+}
+
+.text-content h1 {
+       position: relative;
+       top: 40%;
+       color: #fff;
+       top: 33%;
+       width: 100%;
+       text-align: center;
+}
